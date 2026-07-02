@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YSN Works — Premium web design and digital experiences crafted with precision.">
+  <title>YSN Works — WordPress Developer</title>
+  <link rel="icon" type="image/png" href="Favicon.png">
+<link rel="apple-touch-icon" href="Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&family=Monsieur+La+Doulaise&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- SVG Liquid Glass Filters -->
+  <svg class="svg-filters" aria-hidden="true">
+    <defs>
+      <filter id="liquid-distort" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="2" result="noise">
+          <animate attributeName="baseFrequency" values="0.012;0.015;0.012" dur="8s" repeatCount="indefinite" />
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"
+          result="displaced" />
+        <feGaussianBlur in="displaced" stdDeviation="0.5" result="blurred" />
+      </filter>
+      <filter id="liquid-glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="20" result="blur" />
+        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Ambient Background -->
+  <div class="ambient" aria-hidden="true">
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Edge scroll fade -->
+  <div class="scroll-fade scroll-fade-top" aria-hidden="true"></div>
+  <div class="scroll-fade scroll-fade-bottom" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav glass-panel glass-nav" aria-label="Main navigation">
+      <a href="#" class="logo" aria-label="YSN Works home">
+        <span class="logo-mark">Y</span>
+        <span class="logo-text">YSN Works</span>
+      </a>
+      <!-- <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button> -->
+      <div class="nav-links-wrap">
+        <div class="nav-jelly-pill" aria-hidden="true"></div>
+        <ul class="nav-links">
+          <li><a href="#work" class="nav-link"><span class="nav-link-text">Work</span></a></li>
+          <li><a href="#services" class="nav-link"><span class="nav-link-text">Services</span></a></li>
+          <li><a href="#about" class="nav-link"><span class="nav-link-text">About</span></a></li>
+          <li><a href="#contact" class="nav-link nav-cta glass-btn"><span class="nav-link-text">Let's Talk</span></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="glass-panel glass-badge">
+          <span class="badge-dot"></span>
+          Available for new projects
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Crafting digital</span>
+          <span class="title-line title-accent">experiences</span>
+          <span class="title-line">that resonate</span>
+        </h1>
+        <p class="hero-desc">
+          I'm a web designer specializing in sleek interfaces, fluid interactions,
+          and pixel-perfect experiences that elevate brands and delight users.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="glass-btn glass-btn-primary">
+            View My Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="glass-btn">Get in Touch</a>
+        </div>
+        <div class="hero-stats glass-panel">
+          <div class="stat">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Years</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-card">
+          <img src="Profile.jpeg" alt="Yaseen — YSN Works" class="hero-photo">
+        </div>
+        <div class="glass-panel glass-float glass-float-1">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+          <span>UI Design</span>
+        </div>
+        <div class="glass-panel glass-float glass-float-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            aria-hidden="true">
+            <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+          </svg>
+          <span>Development</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work">
+  <div class="section-header">
+    <span class="section-tag glass-panel">Portfolio</span>
+    <h2 class="section-title">Selected Work</h2>
+    <p class="section-desc">A curated collection of projects that showcase design thinking and technical craft.</p>
+  </div>
+  <div class="work-grid">
+    
+    <!-- Card 1: Hamza Dental Centre (Featured) -->
+    <article class="glass-panel work-card work-card-featured">
+      <div class="work-image">
+        <img src="img-1.png" alt="Hamza Dental Centre - Microscope Assisted Dentistry" loading="lazy">
+        <div class="work-overlay">
+          <span class="work-tag">Web Design</span>
+        </div>
+        <a href="https://hamzadentalcentre.com/" target="_blank" rel="noopener noreferrer" class="work-view-btn" aria-label="View Hamza Dental Centre project">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      </div>
+      <div class="work-info">
+        <h3>Hamza Dental Centre</h3>
+        <p>Premium dental care in Lahore featuring advanced microscope-assisted root canal treatments, elite composite restorations, and state-of-the-art endodontic technology.</p>
+        <a href="https://hamzadentalcentre.com/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View Hamza Dental Centre project">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Card 2: MySmallRecipes -->
+    <article class="glass-panel work-card">
+      <div class="work-image">
+        <img src="img-2.png" alt="MySmallRecipes - Food Blog" loading="lazy">
+        <div class="work-overlay">
+          <span class="work-tag">Blog</span>
+        </div>
+        <a href="https://mysmallrecipes.com/" target="_blank" rel="noopener noreferrer" class="work-view-btn" aria-label="View MySmallRecipes project">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      </div>
+      <div class="work-info">
+        <h3>MySmallRecipes</h3>
+        <p>A food blog featuring easy-to-follow recipes, cooking guides, and culinary inspiration for home chefs.</p>
+        <a href="https://mysmallrecipes.com/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View MySmallRecipes project">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Card 3: FurnitureHub -->
+    <article class="glass-panel work-card">
+      <div class="work-image">
+        <img src="img-3.png" alt="FurnitureHub - Online Furniture Store" loading="lazy">
+        <div class="work-overlay">
+          <span class="work-tag">E-Commerce</span>
+        </div>
+        <a href="https://furniturehub.pk/" target="_blank" rel="noopener noreferrer" class="work-view-btn" aria-label="View FurnitureHub project">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      </div>
+      <div class="work-info">
+        <h3>FurnitureHub</h3>
+        <p>Premium online furniture store with elegant product showcases, category browsing, and seamless shopping experience.</p>
+        <a href="https://furniturehub.pk/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View FurnitureHub project">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Card 4: ScentYou -->
+    <article class="glass-panel work-card">
+      <div class="work-image">
+        <img src="img-4.png" alt="ScentYou - Perfume Store" loading="lazy">
+        <div class="work-overlay">
+          <span class="work-tag">E-Commerce</span>
+        </div>
+        <a href="https://scentyou.pk/" target="_blank" rel="noopener noreferrer" class="work-view-btn" aria-label="View ScentYou project">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      </div>
+      <div class="work-info">
+        <h3>ScentYou</h3>
+        <p>Luxury perfume e-commerce platform with bundle offers, authentic fragrances, and a modern shopping experience.</p>
+        <a href="https://scentyou.pk/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="View ScentYou project">
+          View Project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="section-header">
+        <span class="section-tag glass-panel">What I Do</span>
+        <h2 class="section-title">Services</h2>
+        <p class="section-desc">End-to-end digital solutions tailored to your brand and business goals.</p>
+      </div>
+      <div class="services-grid">
+        <div class="glass-panel service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg>
+          </div>
+          <h3>WordPress</h3>
+          <p>Helping brands establish a powerful online presence through custom WordPress development and responsive design.</p>
+        </div>
+        <div class="glass-panel service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Research-driven design that solves real problems. User flows, prototypes, and interaction design that
+            converts.</p>
+        </div>
+        <div class="glass-panel service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+            </svg>
+          </div>
+          <h3>Development</h3>
+          <p>Clean, performant code that brings designs to life. Modern frameworks with attention to every detail.</p>
+        </div>
+        <div class="glass-panel service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Beautiful, responsive interfaces designed with user experience at the forefront. From wireframes to
+            high-fidelity mockups.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="about-layout">
+        <div class="about-visual">
+          <div class="glass-panel about-card">
+            <div class="about-avatar">
+              <span>YSN</span>
+            </div>
+            <div class="about-skills-mini">
+              <span class="glass-panel skill-pill">WordPress</span>
+              <span class="glass-panel skill-pill">Html</span>
+              <span class="glass-panel skill-pill">CSS</span>
+              <span class="glass-panel skill-pill">Javascript</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag glass-panel">About</span>
+          <h2 class="section-title">Design with purpose,<br>build with passion</h2>
+          <p class="about-text">
+            I'm Yaseen, the creative behind YSN Works. With over five years of experience in web design
+            and development, I help businesses and individuals transform their ideas into stunning digital
+            products that stand out in a crowded landscape.
+          </p>
+          <p class="about-text">
+            My approach blends aesthetic sensibility with technical precision — every pixel matters,
+            every interaction is intentional. I believe great design isn't just about how things look,
+            but how they feel.
+          </p>
+          <div class="tools-list">
+            <span class="tools-label">Tools & Technologies</span>
+            <div class="tools-grid">
+              <span class="glass-panel tool-item">HTML5</span>
+              <span class="glass-panel tool-item">CSS3</span>
+              <span class="glass-panel tool-item">JavaScript</span>
+              <span class="glass-panel tool-item">React</span>
+              <span class="glass-panel tool-item">Next.js</span>
+              <span class="glass-panel tool-item">WordPress</span>
+              <span class="glass-panel tool-item">Tailwind</span>
+              <span class="glass-panel tool-item">Webflow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact" id="contact">
+      <div class="contact-wrapper glass-panel">
+        <div class="contact-content">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's create something<br>extraordinary</h2>
+          <p class="section-desc">Have a project in mind? I'd love to hear about it. Drop me a message and let's make it
+            happen.</p>
+          <div class="contact-links">
+            <a href="mailto:111.limitra.pk@gmail.com" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <path d="M22 6l-10 7L2 6" />
+              </svg>
+              111.limitra.pk@gmail.com
+            </a>
+            <a href="https://wa.me/message/6MF5FBRHGIPXM1" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" aria-label="Contact form" novalidate>
+          <input type="checkbox" name="botcheck" class="form-botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="glass-btn glass-btn-primary form-submit" id="contact-submit">
+              <span class="btn-label">Send Message</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </button>
+            <a
+              href="https://wa.me/message/6MF5FBRHGIPXM1"
+              class="glass-btn whatsapp-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <span class="btn-label">Connect on WhatsApp</span>
+            </a>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-copy">&copy; 2026 YSN Works. Crafted with precision.</p>
+  </footer>
+
+  <script src="contact-config.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
